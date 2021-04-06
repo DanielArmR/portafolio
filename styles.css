@@ -113,3 +113,24 @@ body{
 .social__item a img{
     width: 100%;
 }
+.projects{
+     width: 60%;
+}
+.projects__container{
+    margin: 1rem auto;
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+}
+.projects__container li {
+    width: 48%;
+}
+.projects__container button{
+    width: 100%;
+    background: none;
+    border: none;
+    overflow: hidden;
+}
+.projects__container img{
+    width: 100%;
+}
