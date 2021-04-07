@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="./css/desktop.css" media="screen and (min-width: 800px)">
 </head>
 <body>
+    <a href="#main" class="skip-link">Saltar al contenido</a>
     <header class="header">
         <figure class="header_image">
             <img src="./images/perfil.jpg" alt="Daniel Armas Ramírez - Foto de perfil" class="image_img" />
@@ -30,28 +31,31 @@
             </ul>
         </nav>
     </header>
-    <main class='content'>
-        <section>
+    <main class='content' id="main">
+        <section id="about">
             <h2 class="subtitle">Acerca de</h2>
-            <p class="introduction" id="about">
+            <p class="introduction">
             Hola soy Daniel Armas Ramírez, soy mexicano y actualmente me desempeñó como Frontend Developer, soy Técnico en programación y actualmente colaboró en comunidades de desarrollo, me apasiona aprender del gran mundo de la tecnología para contribuir en el cambio que vivimos cada día, especialmente en desarrollo Web y estoy empezando en el mundo de la Inteligencia Artificial.
             </p>
             <section class="social-media">
                 <h3 class="social__title">Mis Redes Sociales</h3>
                 <ul class="social__links">
                     <li class="social__item">
-                        <a href="https://github.com/daniel692a" target="_blank" rel="noopener">
+                        <a href="https://github.com/daniel692a" target="_blank" rel="noopener" title="GitHub">
                             <img src="./images/github-icon.svg" alt="Link a GitHub">
+                            <p>GitHub</p>
                         </a>
                     </li>
                     <li class="social__item">
-                        <a href="https://rb.gy/89iweu" target="_blank" rel="noopener">
+                        <a href="https://rb.gy/89iweu" target="_blank" rel="noopener" title="Linkedin">
                             <img src="./images/linkedin-icon.svg" alt="Link a Linkedin">
+                            <p>LinkedIn</p>
                         </a>
                     </li>
                     <li class="social__item">
-                        <a href="https://twitter.com/daniel692a" target="_blank" rel="noopener">
+                        <a href="https://twitter.com/daniel692a" target="_blank" rel="noopener" title="Twitter">
                             <img src="./images/twitter.svg" alt="Link a Twitter">
+                            <p>Twitter</p>
                         </a>
                     </li>
                 </ul>
@@ -76,7 +80,7 @@
     </main>
     <footer class="footer">
         <h2 class="subtitle">Contacto</h2>
-        <form class="form_contact">
+        <form class="form_contact" id="contact">
             <label for="name">
                 <span>Nombre:</span>
                 <input type="text" id="name" name="name" placeholder="Nombre" autocomplete="name" required aria-label="Input name">
