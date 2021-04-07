@@ -9,7 +9,7 @@
     <title>Daniel Armas Ramírez</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <!--Mobile CSS-->
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
     <header class="header">
@@ -30,7 +30,7 @@
         <section>
             <h2 class="subtitle">Acerca de</h2>
             <p class="introduction" id="about">
-            Hola soy Daniel Armas Ramírez, soy mexicano y actualmente me desempeñó como Frontend Developer, soy Técnico en programación y actualmente colaboró en las comunidades de desarrollo, me apasiona aprender del gran mundo de la tecnología para contribuir en el cambio que vivimos cada día, especialmente en desarrollo Web y estoy empezando en el mundo de la Inteligencia Artificial
+            Hola soy Daniel Armas Ramírez, soy mexicano y actualmente me desempeñó como Frontend Developer, soy Técnico en programación y actualmente colaboró en comunidades de desarrollo, me apasiona aprender del gran mundo de la tecnología para contribuir en el cambio que vivimos cada día, especialmente en desarrollo Web y estoy empezando en el mundo de la Inteligencia Artificial.
             </p>
             <section class="social-media">
                 <h3 class="social__title">Mis Redes Sociales</h3>
@@ -54,7 +54,7 @@
             </section>
         </section>
 
-        <section id="projects">
+        <section id="projects" class="projects">
             <h2 class="subtitle">Mis Proyectos</h2>
             <ul class="projects__container">
                 <li>
@@ -72,18 +72,18 @@
     </main>
     <footer class="footer">
         <h2 class="subtitle">Contacto</h2>
-        <form action="">
+        <form class="form_contact">
             <label for="name">
-                <span>Nombre</span>
-                <input type="text" id="name" name="name" placeholder="Nombre">
+                <span>Nombre:</span>
+                <input type="text" id="name" name="name" placeholder="Nombre" autocomplete="name" required>
             </label>
             <label for="email">
-                <span>Correo</span>
-                <input type="email" name="email" id="email" placeholder="me@domain.com">
+                <span>Correo:</span>
+                <input type="email" name="email" id="email" placeholder="me@domain.com" autocomplete="email" required>
             </label>
             <label for="message">
-                <span>Mensaje</span>
-                <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                <span>Mensaje:</span>
+                <textarea name="message" id="message" cols="10" rows="8" placeholder="Message" required></textarea>
             </label>
             <input type="submit" value="Enviar">
         </form>

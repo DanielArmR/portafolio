@@ -27,9 +27,9 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 4rem 2rem;
 }
 .header {
+    padding: 4rem 2rem 0 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -37,7 +37,7 @@ body{
     font-family: var(--main-font);
 }
 .header .header_image{
-    width: 25%;
+    width: 50%;
     border-radius: 50%;
     overflow: hidden;
 }
@@ -46,24 +46,29 @@ body{
     box-shadow: 8px 16px 32px 0px var(--shadow);
 }
 .header .name {
-    font-size: 4rem;
+    font-size: 3.4rem;
     font-weight: 900;
+    text-align: center;
 }
 .header .subtitle {
-    font-size: 3rem;
+    font-size: 2.8rem;
     font-weight: 600;
     color: var(--green);
+    text-align: center;
 }
 .navbar{
-    padding: 2rem;
+    padding: 1rem;
     width: 100%;
 }
 .navbar .navbar_list{
     display: flex;
-    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
     list-style: none;
 }
 .navbar .navbar_link{
+    display: block;
+    margin: 1rem;
     text-decoration: none;
     color: var(--white);
     font-size: 2rem;
@@ -72,22 +77,22 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 60%;
-    margin: 3rem 0 0 0;
+    width: 80%;
 }
 .content .subtitle {
-    font-size: 3rem;
+    font-size: 2.8rem;
     font-weight: 600;
     color: var(--green);
     font-family: var(--main-font);
     text-align: center;
-    padding: 1rem;
+    padding: 0 1rem 1rem 1rem;
 }
 .content .introduction {
     color: var(--white);
     font-family: var(--secondary-font);
     font-size: 1.9rem;
     line-height: 2.5rem;
+    text-align: justify;
 }
 
 .social-media {
@@ -96,7 +101,7 @@ body{
     padding: 3rem 2rem;
 }
 .social-media .social__title{
-    font-size: 3rem;
+    font-size: 2.8rem;
     font-family: var(--main-font);
     text-align: center;
     font-weight: 600;
@@ -109,22 +114,23 @@ body{
     padding: 2rem;
 }
 .social__links .social__item{
-    width: 10%;
+    width: 20%;
 }
 .social__item a img{
     width: 100%;
 }
 .projects{
-     width: 60%;
+     width: 100%;
 }
 .projects__container{
     margin: 1rem auto;
     display: flex;
+    flex-direction: column;
     list-style: none;
     justify-content: space-around;
 }
 .projects__container li {
-    width: 48%;
+    width: 100%;
 }
 .projects__container button{
     width: 100%;
@@ -135,11 +141,49 @@ body{
 .projects__container img{
     width: 100%;
 }
+.footer {
+    width: 100%;
+    background: var(--gray-strong);
+}
 .footer .subtitle {
-    font-size: 3rem;
+    font-size: 2.8rem;
     font-weight: 600;
     color: var(--white);
     font-family: var(--main-font);
     text-align: center;
     padding: 1rem;
+}
+.footer .form_contact{
+    width: 80%;
+    display: flex;
+    color: var(--white);
+    font-family: var(--secondary-font);
+    flex-direction: column;
+    margin: auto;
+    font-size: 1.6rem;
+    padding-bottom: 3rem;
+}
+.form_contact input{
+    padding-left: 0.5rem;
+    width: 100%;
+}
+.form_contact input:focus {
+    outline: 2px solid var(--green);
+}
+.form_contact textarea {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+.form_contact input[type=submit]{
+    margin: 1rem 0;
+    padding: 1rem 0;
+    background-color: var(--green);
+    border-radius: 40px;
+    border: none;
+    color: var(--white);
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+.form_contact input[type=submit]:hover {
+    background-color: #619b37;
 }
