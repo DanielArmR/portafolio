@@ -1,0 +1,9 @@
+.header .header_image {
+    width: 30%;
+}
+.projects .projects__container li {
+    width: 35%;
+}
+.footer .form_contact {
+    width: 40%;
+}
