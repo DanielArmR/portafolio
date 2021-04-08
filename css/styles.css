@@ -173,11 +173,7 @@ body{
     background: var(--gray-strong);
 }
 .footer .subtitle {
-    font-size: 2.8rem;
-    font-weight: 600;
     color: var(--white);
-    font-family: var(--main-font);
-    text-align: center;
     padding: 1rem;
 }
 .footer .form_contact{
@@ -205,7 +201,7 @@ body{
     margin: 1rem 0;
     padding: 1rem 0;
     background-color: var(--green);
-    border-radius: 40px;
+    border-radius: 20px;
     border: none;
     font-size: 2.4rem;
     font-weight: 600;
